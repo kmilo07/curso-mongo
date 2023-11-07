@@ -1,0 +1,28 @@
+use("platzi_store")
+
+db.products.drop() //borra todo los elementos de una colleccion
+
+db.products.insertMany([
+    {
+        _id: 1,
+        name: 'product 1',
+        price: 100
+    },
+    {
+        _id: 2,
+        name: 'product 2',
+        price: 1000
+    },
+    {
+        _id: 1,
+        name: 'product 3',
+        price: 5000
+    },
+    {
+        _id: 4,
+        name: 'product 4',
+        price: 10000
+    },
+], {ordered: false}) //para que ignore los problemas de duplicidad 
+
+db.products.find()
