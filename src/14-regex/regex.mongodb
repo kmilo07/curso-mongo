@@ -1,0 +1,8 @@
+use("platzi_store")
+// db.inventory.find()
+//db.inventory.find({"item.description":"Single line description."})
+// db.inventory.find({"item.description":{$regex:/line/}})
+// db.inventory.find({"item.description":{$regex:/line/i}}) //ignorar mayusculas y minusculas
+// db.inventory.find({"item.description":{$regex:/line$/i}}) //ignorar mayusculas y minusculas y termine con line
+// db.inventory.find({"item.description":{$regex:/^single/i}}) //ignorar mayusculas y minusculas y inicie con single
+db.inventory.find({"item.description":{$regex:/^s/im}}) //ignorar mayusculas y minusculas y inicie con s en multiple lineas
