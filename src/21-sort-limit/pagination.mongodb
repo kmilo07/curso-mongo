@@ -1,0 +1,6 @@
+use("platzi_store")
+
+db.categories
+.find()
+.skip(2) //para saber desde cual va a iniciar
+.limit(2)
